@@ -201,5 +201,38 @@ footer{
     .header-content{
         margin-top: -50px;
     }
-    
+    .main-content .top-content{
+        
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main-content .top-content .text-content{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .middle-img{
+        margin-left: 20px;
+        width: 100%;
+    }
+    .main-content .bottom-content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main-content .bottom-content .text-content{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main-content .top-content{
+        font-size: 30px;
+    }
+    .main-content .bottom-content{
+        font-size: 30px;
+    }
+    .contact{
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    footer{
+        font-size: 30px;]
+    }
 }
