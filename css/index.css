@@ -1,3 +1,256 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body{
+	margin: 0 auto;
+	max-width: 900px;
+}
+/* this is code for the navigation*/
+header{
+	width: 900px;
+	position: fixed;
+	top: 15px;
+	display: flex;
+}
+header nav{
+	width: 650px;
+	padding-top: 25px;
+}
+header .navigation a{
+	color: gray;
+	text-decoration: none;
+	padding-right: 45px;
+}
+header .logo{
+	height: 6vh;
+	padding-left: 20px;
+	padding-top: 15px;
+}
+/* this is code for the main content*/
+.main-content{
+	display: flex;
+	margin-top: 150px;
+	font-size: 70px;
+	border-bottom: solid 1px black;
+	padding-bottom: 50px;
+	width: 875px;
+}
+.main-content .title{
+	width: 49%;
+	margin-top: 45px;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 50px;
+}
+.main-content .title h1{
+	padding-top: 60px;
+}
+.main-content .title .button{
+	margin-top: -45px;
+}
+.main-content .title button{
+	background-color: white;
+	border: 1px solid black;
+	padding: 5px 40px;	
+}
+/* this is code fot the top content*/
+.top-content{
+	margin-top: 30px;
+	display: flex;
+}
+
+.top-content .text-content{
+	width: 49%;
+}
+/* this is code for the image*/
+.middle-img{
+margin-top: 30px;
+}
+/* this is code for the main content*/
+.bottom-content{
+	display: flex;
+	width: 876px;
+	margin-top: 30px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+.bottom-content .bottom-text{
+	
+	width: 33%;
+}
+/* this is code for the contact information*/
+.contact{
+	margin-top: 30px;
+}
+/* this is code for the footer*/
+footer{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	font-family: 'Dosis', sans-serif;
+}
+/* this is code for the services html*/
+.services-header-img{
+	margin-top: 90px;
+}
+.service-top{
+	margin-top: 20px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+.service-top h1{
+	font-size: 20px;
+}
+.main-top{
+	display: flex;
+	margin-top: 30px;
+}
+
+.main-top .text-one{
+	background-color: rgb(240, 240, 240);
+	border: 1px solid black;
+	padding: 20px;
+	margin-right: 20px;
+}
+.main-top .text-one button{
+	margin-top: 20px;
+	padding: 10px 40px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+.main-top .text-two{
+	background-color: rgb(240, 240, 240);
+	border: 1px solid black;
+	padding: 20px;
+	margin-left: 20px;
+}
+.main-top .text-two button{
+	margin-top: 20px;
+	padding: 10px 40px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+.service-bottom{
+	display: flex;
+	margin-top: 30px;
+	border-top: 1px solid black;
+	padding-top: 40px;
+}
+
+.service-bottom .facts{
+	margin-right: 20px;
+	width: 450px;
+}
+.service-bottom .facts ul{
+	margin-top: 30px;
+	list-style-type: square;
+	margin-left: 18px;
+}
+.service-bottom .facts ul li{
+	padding-bottom: 3%;
+}
+.service-bottom img{
+	width: 430px;
+	margin-left: 20px;
+}
+.service-footer{
+	text-align: center;
+	margin-top: 100px;
+}
+@media (max-width: 800px){
+    body{
+        margin: 0 auto;
+        width: 800px;
+    }
+    header{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    header nav{
+        width: 800px;
+    }
+    header .navigation a{
+        padding-right: 80px;
+    }
+    .main-content .title img{
+        display: none;
+    }
+    .main-content {
+        width: 100%;
+    }
+    .main-content .title:first-child{
+        width: 100%;
+    }
+    .main-content .title:last-child{
+        margin: 0;
+        padding: 0;
+        width: 0;
+    }
+}
 
