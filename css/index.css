@@ -226,31 +226,68 @@ footer{
 @media (max-width: 800px){
     body{
         margin: 0 auto;
-        width: 800px;
+        max-width: 800px;
     }
     header{
         flex-direction: column-reverse;
         align-items: center;
+        width: 800px;
     }
     header nav{
         width: 800px;
     }
     header .navigation a{
-        padding-right: 80px;
+        padding-right: 5.6rem;
+    }
+    header .logo{
+        margin-bottom: 2rem;
+    }
+    header .navigation a:first-child{
+        margin-left: 2rem;
+    }
+    header .navigation a:last-child{
+        padding-right: 0;
     }
     .main-content .title img{
         display: none;
     }
     .main-content {
-        width: 100%;
+        width: 775px;
+        margin-left: 2rem;
+        margin-right: -2rem;
+        margin-top: 75px;
     }
     .main-content .title:first-child{
-        width: 100%;
+        width: 80rem;
+        margin-left: 0;
+        margin-top: 6rem;
     }
     .main-content .title:last-child{
         margin: 0;
         padding: 0;
         width: 0;
+    }
+    .top-content{
+        width: 100%;
+        justify-content:space-between;
+        margin-left: 2rem;
+    }
+    .top-content .text-content{
+        width: 47%;
+    }
+    .middle-img{
+        width: 775px;
+        margin-left: 2rem;
+    }
+    .bottom-content{
+        width: 775px;
+        margin-left: 2rem;
+    }
+    .bottom-content .bottom-text{
+        margin-right: 2rem;
+    }
+    .contact{
+        margin-left: 2rem;
     }
 }
 
