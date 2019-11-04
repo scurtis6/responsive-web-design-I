@@ -72,7 +72,6 @@ body{
 /* this is code for the navigation*/
 header{
 	width: 900px;
-	position: fixed;
 	top: 15px;
 	display: flex;
 }
@@ -93,7 +92,7 @@ header .logo{
 /* this is code for the main content*/
 .main-content{
 	display: flex;
-	margin-top: 150px;
+	margin-top: 25px;
 	font-size: 70px;
 	border-bottom: solid 1px black;
 	padding-bottom: 50px;
@@ -255,12 +254,11 @@ footer{
         width: 775px;
         margin-left: 2rem;
         margin-right: -2rem;
-        margin-top: 75px;
+        margin-top: -2rem;
     }
     .main-content .title:first-child{
         width: 80rem;
         margin-left: 0;
-        margin-top: 6rem;
     }
     .main-content .title:last-child{
         margin: 0;
@@ -296,6 +294,10 @@ footer{
         margin: 0 auto;
         max-width: 500px;
     }
+    header{
+        width: 500px;
+       
+    }
     header .navigation{
         width: 500px;
         margin-top: -2.5rem;
@@ -318,23 +320,44 @@ footer{
         height: 10vh;
     }
     .main-content{
-        width: 500px;
-        margin-left: 9.5rem;
-        margin-top: 275px;
+        width: 480px;
+        margin-left: 1rem;
+        margin-top: -4rem;
     }
     .top-content{
-        margin-left: 9.5rem;
+        width: 480px;
+        margin-left: 1rem;
         flex-direction: column;
     }
     .top-content .text-content{
         width: 100%;
     }
     .top-content .text-content:last-child{
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .middle-img{
+        width: 480px;
+        margin-left: 1rem;
+    }
+    .bottom-content{
+        flex-direction: column;
+        width: 480px;
+        margin-left: 1rem;
+    }
+    .bottom-content .bottom-text:last-child{
+        margin-bottom: -4rem;
+    }
+    .bottom-content .bottom-text{
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+    .contact{
         width: 500px;
-        margin-left: 9.5rem;
+        margin-left: 1rem;
+    }
+    footer{
+        width: 500px;
+        margin-left: 1rem;
     }
 }
 
