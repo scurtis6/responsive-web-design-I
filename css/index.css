@@ -291,3 +291,61 @@ footer{
     }
 }
 
+@media (max-width: 500px){
+    body{
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    header .navigation{
+        width: 500px;
+        margin-top: -2.5rem;
+    }
+    header .navigation a{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    header .navigation a{
+        text-align: center;
+        padding-right: 0;
+        border-bottom: 1px solid gray;
+    }
+    header .navigation a:first-child{
+        margin-left: 0;
+        border-top: 1px solid gray;
+    }
+    header .logo{
+        height: 10vh;
+    }
+    .main-content{
+        width: 500px;
+        margin-left: 9.5rem;
+        margin-top: 275px;
+    }
+    .top-content{
+        margin-left: 9.5rem;
+        flex-direction: column;
+    }
+    .top-content .text-content{
+        width: 100%;
+    }
+    .top-content .text-content:last-child{
+        margin-top: 2rem;
+    }
+    .middle-img{
+        width: 500px;
+        margin-left: 9.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
