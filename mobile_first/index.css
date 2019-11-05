@@ -1,0 +1,221 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+*{
+     max-width: 500px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    flex-direction: column-reverse;
+}
+header .navigation{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+header .navigation a{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: gray;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+header .navigation a:first-child{
+    margin-left: 0;
+    border-top: 1px solid gray;
+}
+header .logo{
+    height: 8vh;
+	padding: 1rem 9rem 0 9rem;
+
+}
+.main-content{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.main-content .title h1{
+    font-size: 3.5rem;
+}
+.main-content .title button{
+    background: white;
+    border: 1px solid black;
+    padding: 0.5rem 2.5rem;
+    min-width: 100px;
+}
+.main-content .title:last-child{
+    display: none;
+}
+.top-content{
+    width: 480px;
+    margin-left: 0.5rem;
+    padding-top: 2rem;
+    flex-direction: column;
+    border-top: 1px solid black;
+}
+.top-content .text-content{
+    width: 100%;
+}
+.top-content .text-content:last-child{
+    margin-top: 3rem;
+}
+.middle-img{
+    width: 480px;
+    margin-left: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.bottom-content{
+    flex-direction: column;
+    width: 480px;
+    margin-left: 0.5rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 3rem;
+}
+.bottom-content .bottom-text:last-child{
+    margin-bottom: -4rem;
+}
+.bottom-content .bottom-text{
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.contact{
+    margin-left: 0.5rem;
+    padding-top: 2rem;
+}
+footer{
+    text-align: center;
+    margin-top: 2rem;
+}
+@media (min-width: 800px){
+    *{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    header .navigation{
+        flex-direction: row;
+        margin-top: -1.5rem;
+    }
+    header .navigation a:first-child{
+        border-top: none
+    }
+    header .navigation a{
+        border-bottom: none;
+        padding-right: 4.5rem;
+    }
+    header .logo{
+        padding: 1rem 18rem 3rem 18rem;
+        margin-top: 1rem;
+    }
+    .top-content{
+        width: 775px;
+        display: flex;
+        flex-direction: row;
+    }
+    .top-content .text-content:first-child{
+        margin-left: 1rem;
+    }
+    .top-content .text-content:last-child{        
+        margin-top: 0;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+    .middle-img{
+        width: 775px;
+    }
+    .bottom-content{
+        width: 775px;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+    .bottom-content .bottom-text{
+        width: 33%;
+        margin-right: 1.5rem;
+    }
+    .bottom-content .bottom-text:last-child{
+        margin-right: 2rem;
+    }
+    .contact{
+     margin-left: 1rem;   
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
