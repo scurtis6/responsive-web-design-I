@@ -1,0 +1,168 @@
+/* this is code for the services html*/
+header{
+	width: 900px;
+	top: 15px;
+	display: flex;
+}
+header nav{
+	width: 650px;
+	padding-top: 25px;
+}
+header .navigation a{
+	color: gray;
+	text-decoration: none;
+	padding-right: 45px;
+}
+header .logo{
+	height: 6vh;
+	padding-left: 20px;
+    padding-top: 15px;
+} 
+.services-header-img{
+	margin-top: 90px;
+}
+.service-top{
+	margin-top: 20px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+.service-top h1{
+	font-size: 20px;
+}
+.main-top{
+	display: flex;
+	margin-top: 30px;
+}
+
+.main-top .text-one{
+	background-color: rgb(240, 240, 240);
+	border: 1px solid black;
+	padding: 20px;
+	margin-right: 20px;
+}
+.main-top .text-one button{
+	margin-top: 20px;
+	padding: 10px 40px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+.main-top .text-two{
+	background-color: rgb(240, 240, 240);
+	border: 1px solid black;
+	padding: 20px;
+	margin-left: 20px;
+}
+.main-top .text-two button{
+	margin-top: 20px;
+	padding: 10px 40px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+.service-bottom{
+	display: flex;
+	margin-top: 30px;
+	border-top: 1px solid black;
+	padding-top: 40px;
+}
+
+.service-bottom .facts{
+	margin-right: 20px;
+	width: 450px;
+}
+.service-bottom .facts ul{
+	margin-top: 30px;
+	list-style-type: square;
+	margin-left: 18px;
+}
+.service-bottom .facts ul li{
+	padding-bottom: 3%;
+}
+.service-bottom img{
+	width: 430px;
+	margin-left: 20px;
+}
+.service-footer{
+	text-align: center;
+	margin-top: 100px;
+}
+@media (max-width: 500px){
+    *{
+        box-sizing:border-box;
+        max-width:500px;
+    }
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    header .logo{
+        width: 25%;
+        height: auto;
+        margin-left: 187.5px;
+    }
+    header .navigation a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 0;
+        font-size: 2rem;
+    }
+    .services-header-img{
+        margin-top: 2rem;
+    }
+	.main-top{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+    }
+    .main-top .text-one{
+		margin: 0px;
+		margin-bottom: 30px;
+    }	
+    .main-top .text-two{
+		margin: 0px;
+    }
+    .service-bottom{
+        flex-direction: column;
+    }
+    .service-bottom .facts{
+        margin-left: 2rem;
+    }
+    .service-bottom .facts ul{
+        margin-left: -1.6rem;
+
+    }	
+}
+@media (max-width: 800px){
+	*{
+        box-sizing:border-box;
+        max-width:800px;
+    }
+    header{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    header .navigation{
+        width: 800px;
+    }
+    header .navigation a{
+        padding-right: 6rem;
+    }
+    header .navigation a:last-child{
+        padding-right: 0;
+    }
+    header .logo{
+        margin-bottom: 2rem;
+    }
+    .services-header-img{
+        width: 790px;
+        margin-top: 2rem;
+    }
+    .service-bottom .facts{
+        margin-top: -1.5rem;
+    }
+    .service-bottom .facts ul{
+        margin-left: 0;
+    }
+}
